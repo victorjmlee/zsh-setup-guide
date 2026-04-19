@@ -114,9 +114,6 @@ prompt_newline() {
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# pipx
-export PATH="$PATH:/Users/victor.lee/.local/bin"
-
 ```
 
 Save and exit (`Ctrl+O`, `Enter`, `Ctrl+X` in nano).
