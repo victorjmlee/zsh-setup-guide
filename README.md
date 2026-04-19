@@ -57,22 +57,8 @@ brew install zsh-syntax-highlighting zsh-autosuggestions
 
 ---
 
-## Step 5: Install pipx (optional, if you use it)
 
-```sh
-brew install pipx
-pipx ensurepath
-```
-
-This adds `~/.local/bin` to your PATH.
-
-
-
-Then set your terminal emulator's font to **MesloLGS NF** (or any Nerd Font / Powerline font of your choice) in its preferences.
-
----
-
-## Step 8: Replace your `.zshrc`
+## Step 5: Replace your `.zshrc`
 
 Open the file:
 
@@ -137,7 +123,7 @@ Save and exit (`Ctrl+O`, `Enter`, `Ctrl+X` in nano).
 
 ---
 
-## Step 9: Apply the configuration
+## Step 6: Apply the configuration
 
 ```sh
 source ~/.zshrc
