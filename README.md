@@ -66,21 +66,7 @@ pipx ensurepath
 
 This adds `~/.local/bin` to your PATH.
 
----
 
-## Step 6: Install SCFW (Supply Chain Firewall)
-
-If your new machine requires SCFW, follow your organization's internal instructions to install it. The SCFW block in your config expects it to be available at `~/.scfw`.
-
----
-
-## Step 7: Install a Powerline-compatible font
-
-The **agnoster** theme requires a Powerline-patched font to render special characters (arrows/segments) correctly.
-
-```sh
-brew install --cask font-meslo-lg-nerd-font
-```
 
 Then set your terminal emulator's font to **MesloLGS NF** (or any Nerd Font / Powerline font of your choice) in its preferences.
 
@@ -145,14 +131,6 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # pipx
 export PATH="$PATH:/Users/victor.lee/.local/bin"
 
-# BEGIN SCFW MANAGED BLOCK
-alias npm="scfw run npm"
-alias pip="scfw run pip"
-alias poetry="scfw run poetry"
-export SCFW_DD_AGENT_LOG_PORT="10365"
-export SCFW_DD_LOG_LEVEL="ALLOW"
-export SCFW_HOME="/Users/victor.lee/.scfw"
-# END SCFW MANAGED BLOCK
 ```
 
 Save and exit (`Ctrl+O`, `Enter`, `Ctrl+X` in nano).
@@ -178,7 +156,6 @@ source ~/.zshrc
 | Autosuggestions | Start typing a previously run command — a gray suggestion should appear |
 | Git plugin | `cd` into a git repo — branch name should appear in the prompt |
 | pipx PATH | `echo $PATH` should include `.local/bin` |
-| SCFW aliases | `which npm` should show `scfw run npm` |
 
 ---
 
